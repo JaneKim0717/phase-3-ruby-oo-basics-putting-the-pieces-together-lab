@@ -1,2 +1,21 @@
+class Book
 
+    #setter and getter methods through attr_accessor for author/page count/genre
+    attr_accessor :author, :page_count, :genre
+
+    #getter method for title because we are initializing with title and don't want this value to change
+    attr_reader :title
+
+    def initialize(title)
+        @title = title
+    end
+
+    def turn_page
+        puts "Flipping the page...wow, you read fast!"
+    end
+
+
+
+
+end
 
